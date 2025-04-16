@@ -78,3 +78,80 @@
 //   console.log(`20 note: ${Math.floor(amount / 20)}`);
 //   amount = amount % 20;
 // }
+
+//
+//
+//
+// Ternary Operator  ? :
+
+// 12 > 13 ? console.log("HOHOHOHHO") : console.log("NANANANA");
+
+// console.log(122 > 14 ? "YESYEYSYES" : "NONONONON");
+
+// let num = 0;
+// console.log(num > 0 ? "positive" : num < 0 ? "Negative" : "Zero");
+
+//
+//
+//
+// switch
+
+// let day = Number(prompt("Enter Number Only"));
+
+// switch (day) {
+//   case 1:
+//     console.log("monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   default:
+//     console.log("Invalid");
+// }
+
+// let multi = Number(prompt("Enter Number Only"));
+
+// switch (multi) {
+//   case 1:
+//   case 2:
+//   case 3:
+//     console.log("Tuesday");
+//     break;
+//   case 4:
+//   case 5:
+//   case 6:
+//     console.log("Wed");
+//     break;
+//   default:
+//     console.log("Invalid");
+// }
+
+// switch (false) {
+//   case 17 > 3:
+//     console.log("Technalogiya");
+//     break;
+//   case 33 < 2:
+//     console.log("Bad Technalogiya");
+// }
+
+let num = 0.1 + 0.2;
+switch (num) {
+  case 0.3:
+    console.log("Hello");
+    break;
+  case 0.5:
+    console.log("Hey");
+    break;
+  default:
+    console.log("Invalid");
+}
+
+let value = Math.round((0.1 + 0.2) * 10) / 10;
+
+switch (value) {
+  case 0.3:
+    console.log("Matched case 0.3");
+    break;
+  default:
+    console.log("Default case");
+}
