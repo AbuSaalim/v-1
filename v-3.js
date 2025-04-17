@@ -134,24 +134,24 @@
 //     console.log("Bad Technalogiya");
 // }
 
-let num = 0.1 + 0.2;
-switch (num) {
-  case 0.3:
-    console.log("Hello");
-    break;
-  case 0.5:
-    console.log("Hey");
-    break;
-  default:
-    console.log("Invalid");
-}
+// let num = 0.1 + 0.2;
+// switch (num) {
+//   case 0.3:
+//     console.log("Hello");
+//     break;
+//   case 0.5:
+//     console.log("Hey");
+//     break;
+//   default:
+//     console.log("Invalid");
+// }
 
-let value = Math.round((0.1 + 0.2) * 10) / 10;
+// let value = Math.round((0.1 + 0.2) * 10) / 10;
 
-switch (value) {
-  case 0.3:
-    console.log("Matched case 0.3");
-    break;
-  default:
-    console.log("Default case");
-}
+// switch (value) {
+//   case 0.3:
+//     console.log("Matched case 0.3");
+//     break;
+//   default:
+//     console.log("Default case");
+// }
