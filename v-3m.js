@@ -47,9 +47,9 @@
 //     // It's Run In Loop
 // }
 
-// let n = 5; // You can change this number
+// let n = 55;
 // for (let i = 0; i < n; i++) {
-//     console.log("Hello World");
+//   console.log("Hello World");
 // }
 
 // // /////////     1. Sum Of n Natural Number ///////////
@@ -76,6 +76,8 @@
 //   }
 // }
 
+// ////////   pr  if isNuN(pr)   -2 or 0   else   pr = 10  initialize sum=0  loop(let i=1; i<=10; i++)   sum += i;   1 3 6 10 15 21 28                   //////////////////////////
+
 ////////////////////// 2. Factorial (*) Number ////////////////////////
 
 // let pr = prompt("Enter A Number");
@@ -100,7 +102,7 @@
 // }
 ///// Output :> 125 //////9
 
-////////////////////// 2. Factorial of Number ////////////////////////
+////////////////////// 2. Factor of Number ////////////////////////
 
 // let pr = prompt("Enter a Number");
 // if (pr === null) {
@@ -125,29 +127,116 @@
 
 ////////////////////// 2. Find Prime Number ////////////////////////
 
-let pr = prompt("Enter Number to Check Prime Number");
+// let pr = prompt("Enter Number to Check Prime Number");
+// if (pr === null) {
+//   console.log("Cancelled");
+// } else {
+//   let n = Number(pr);
+//   if (isNaN(n)) {
+//     console.log("Invalid number");
+//   } else {
+//     if (n > 1) {
+//       let primeHai = true;
+//       for (let i = 2; i <= Math.floor(n / 2); i++) {
+//         if (n % i === 0) {
+//           primeHai = false;
+//           break;
+//         }
+//       }
+//       if (primeHai) {
+//         console.log(n + " is a prime number");
+//       } else {
+//         console.log(n + " is not a prime number");
+//       }
+//     } else {
+//       console.log("Number should be greater than 1");
+//     }
+//   }
+// }
+
+//// Alternate /////
+
+// let pr = prompt("Enter Number");
+// if (pr === null) {
+//   console.log("Cencelled");
+// } else {
+//   let n = Number(pr);
+//   if (n >= 0) {
+//     console.log(isPrime(n));
+//   } else {
+//     console.log("Negative Number");
+//   }
+// }
+
+// function isPrime(n) {
+//   if (n <= 1) return false;
+//   if (n == 2) return true;
+//   if (n % 2 === 0) return false;
+//   for (let i = 3; i < Math.floor(Math.sqrt(n)); i += 2) {
+//     if (n % i === 0) return false;
+//   }
+//   return true;
+// }
+
+// //////////      LETS START WHILE LOOP    /////////////
+
+// 15654 % 10
+// 4
+
+// 15654 / 10
+// 1565
+
+// let ans = prompt("Kuch Bhi Dedo.  (Prompt Band Karna Hai To exit likh lo) ");
+// if (ans === null) {
+//   console.log("Cancelled Prompt Input");
+// }
+// while (ans !== "exit" && ans !== "Exit" && ans !== "EXIT") {
+//   // console.log(ans);
+//   prompt("Kuch Bhi Dedo.  (Prompt Band Karna Hai To exit likh lo) ");
+// }
+
+// let pr = prompt("Enter Number to Sum of Natural Number");
+//  if (pr === null) {
+//    console.log("Cancelled Prompt Input");
+//  }
+//   else {
+//     let n = Number(pr);
+//     if (isNaN(n)) {
+//       console.log("Wrong Input");
+//     } else {
+//       if (n > 0) {
+//         let sum = 0;
+//         let i = 1;
+//         while (i <= n) {
+//           sum = sum + i;
+//           i++;
+//         }
+//         console.log(sum);
+//       } else {
+//         console.log("nagative Number");
+//       }
+//     }
+//   }
+
+let pr = Number(prompt("Enter a Number"));
+
 if (pr === null) {
   console.log("Cancelled");
 } else {
   let n = Number(pr);
   if (isNaN(n)) {
-    console.log("Invalid number");
+    console.log("Invalid Input");
   } else {
-    if (n > 1) {
-      let primeHai = true;
-      for (let i = 2; i <= Math.floor(n / 2); i++) {
-        if (n % i === 0) {
-          primeHai = false;
-          break;
-        }
+    if (n > 0) {
+      let reverse = 0;
+      while (n > 0) {
+        let rem = n % 10;
+        reverse = reverse * 10 + rem;
+        n = Math.floor(n / 10);
       }
-      if (primeHai) {
-        console.log(n + " is a prime number");
-      } else {
-        console.log(n + " is not a prime number");
-      }
+      console.log(reverse);
     } else {
-      console.log("Number should be greater than 1");
+      console.log("Should be +ve and  more then 0");
     }
   }
 }
