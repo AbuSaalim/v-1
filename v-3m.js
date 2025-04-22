@@ -218,25 +218,86 @@
 //     }
 //   }
 
-let pr = Number(prompt("Enter a Number"));
+// let pr = Number(prompt("Enter a Number"));
+// let pr = 4321;
 
-if (pr === null) {
-  console.log("Cancelled");
-} else {
-  let n = Number(pr);
-  if (isNaN(n)) {
-    console.log("Invalid Input");
-  } else {
-    if (n > 0) {
-      let reverse = 0;
-      while (n > 0) {
-        let rem = n % 10;
-        reverse = reverse * 10 + rem;
-        n = Math.floor(n / 10);
-      }
-      console.log(reverse);
-    } else {
-      console.log("Should be +ve and  more then 0");
-    }
-  }
-}
+// if (pr === null) {
+//   console.log("Cancelled");
+// } else {
+//   let n = Number(pr);
+//   if (isNaN(n)) {
+//     console.log("Invalid Input");
+//   } else {
+//     if (n > 0) {
+//       let reverse = 0;
+//       while (n > 0) {
+//         let rem = n % 10;
+//         reverse = reverse * 10 + rem;
+//         n = Math.floor(n / 10);
+//       }
+//       console.log(reverse);
+//     } else {
+//       console.log("Should be +ve and  more then 0");
+//     }
+//   }
+// }
+
+// let pro = 145;
+// let pro = prompt("ENter Number TO See Bold Number");
+
+// if (pro === null) {
+//   console.log("cencelled");
+// } else {
+//   let n = Number(pro);
+//   if (isNaN(n)) {
+//     console.log("Don't Use String");
+//   } else {
+//     if (n > 0) {
+//       let sum = 0;
+//       let copy = n;
+//       while (n > 0) {
+//         let rem = n % 10;
+//         let fact = 1;
+//         for (let i = 1; i <= rem; i++) {
+//           fact *= i;
+//         }
+//         sum += fact;
+//         n = Math.floor(n / 10);
+//       }
+//       if (copy === sum) {
+//         console.log(
+//           `This is Strong Number, Because Your Number is: ${copy} Answer is: ${sum} `
+//         );
+//       } else {
+//         console.log(`This is Not A Strong Number  ${sum}`);
+//       }
+//     } else {
+//       console.log("Number Not Correct, plases enter Number 0+");
+//     }
+//   }
+// }
+
+//////         Guess The Number /////////
+
+// let computer = Math.floor(Math.random() * 10);
+// console.log(computer);
+
+// while (n !== computer) {
+//   let pr = prompt("Enter A Number For Guess Number");
+//   if (pr === null) {
+//     console.log("cancelled");
+//   } else {
+//     let n = Number(pr);
+//     if (isNaN(n)) {
+//       console.log("String Not Exepted. Please Enter Number");
+//     }
+//   }
+
+//   if (computer > n) {
+//     console.log("Your Number Is Hight : " + n);
+//   } else if (computer < n) {
+//     console.log("Your Number Is Low : " + n);
+//   } else if (computer === n) {
+//     console.log(`Congratulation!🎉🎉 number is Match. `);
+//   }
+// }
