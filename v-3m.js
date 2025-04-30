@@ -76,8 +76,6 @@
 //   }
 // }
 
-// ////////   pr  if isNuN(pr)   -2 or 0   else   pr = 10  initialize sum=0  loop(let i=1; i<=10; i++)   sum += i;   1 3 6 10 15 21 28                   //////////////////////////
-
 ////////////////////// 2. Factorial (*) Number ////////////////////////
 
 // let pr = prompt("Enter A Number");
@@ -301,3 +299,83 @@
 //     console.log(`Congratulation!🎉🎉 number is Match. `);
 //   }
 // }
+
+//////////      Gues the Random Number /////////////////
+
+// let random = Math.floor(Math.random() * 100) + 1;
+
+// let guess = -1;
+
+// while (guess !== random) {
+//   guess = Number(prompt("Guess the number"));
+//   if (isNaN(guess) || guess < 1 || guess > 100) {
+//     console.log("try again b/w 1 - 100");
+//     continue;
+//   }
+//   if (guess > random) {
+//     console.log("Your Number Is Hight : " + guess);
+//   } else if (random < guess) {
+//     console.log("Your Number Is Low : " + guess);
+//   } else {
+//     console.log(`Congratulation!🎉🎉 number is Match. ${guess} `);
+//   }
+// }
+
+//////           Alter Nate Guess Number /////////////
+
+// let random = Math.floor(Math.random() * 100) + 1;
+
+// let guess = -1;
+
+// while (guess !== random) {
+//   guess = Number(prompt("Guess the number between 1 and 100"));
+
+//   if (isNaN(guess) || guess < 1 || guess > 100) {
+//     console.log("Try again between 1 - 100");
+//     continue;
+//   }
+
+//   if (guess > random) {
+//     console.log("Your number is High: " + guess);
+//   } else if (guess < random) {
+//     console.log("Your number is Low: " + guess);
+//   } else {
+//     console.log(`🎉 Congratulations! Number matched: ${guess}`);
+//   }
+// }
+
+function Recontinue() {
+  let checkOperation = Number(
+    prompt(
+      "Enter 1 for Addition, Enter 2 for Substraction, Enter 3 for multipication, Enter"
+    )
+  );
+
+  if (isNaN(checkOperation) || checkOperation < 0 || checkOperation === null) {
+    console.log("Try Again");
+  } else {
+    if (checkOperation === 1) {
+      let a = Number(prompt("Enter First Number for Addition"));
+      let b = Number(prompt("Enter Second Number for Addition"));
+      let c = a + b;
+      console.log(`Addition Answer is: ${c}`);
+    } else if (checkOperation === 2) {
+      let a = Number(prompt("Enter First Number for subtraction"));
+      let b = Number(prompt("Enter Second Number for subtraction"));
+      let c = a - b;
+      console.log(`Subtraction Answer is: ${c}`);
+    } else if (checkOperation === 3) {
+      let a = Number(prompt("Enter First Number for Multiplication"));
+      let b = Number(prompt("Enter Second Number for Multiplication"));
+      let c = a * b;
+      console.log(`Multiplication Answer is: ${c}`);
+    } else {
+      console.log("Enter b/w 1 to 3");
+    }
+  }
+}
+
+let continue1 = prompt("Continue then Type Yes");
+if (continue1 == "yes") {
+  Recontinue();
+}
