@@ -2,11 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>X Pattern</title>
+    <style>
+      .grid {
+        display: grid;
+        gap: 4px;
+        margin: 40px auto;
+        width: max-content;
+      }
+      .cell {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: monospace;
+        font-size: 18px;
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+      }
+      .star {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <h1>Star Printing</h1>
-    <script src="star-printing.js"></script>
+    <div>
+      <label>Enter size: </label>
+      <input type="number" id="sizeInput" value="5" min="1" />
+      <button onclick="drawX()">Draw X</button>
+    </div>
+
+    <div id="xPattern" class="grid"></div>
+
+    <script>
+      function drawX() {
+        const size = Number(document.getElementById("sizeInput").value);
+        const container = document.getElementById("xPattern");
+        container.innerHTML = "";
+        container.style.gridTemplateColumns = `repeat(${size}, auto)`;
+
+        for (let i = 1; i <= size; i++) {
+          for (let j = 1; j <= size; j++) {
+            const cell = document.createElement("div");
+            cell.classList.add("cell");
+
+            if (i === j || i + j === size + 1) {
+              cell.textContent = "*";
+              cell.classList.add("star");
+            } else {
+              cell.textContent = " ";
+            }
+
+            container.appendChild(cell);
+          }
+        }
+      }
+
+      // draw once by default
+      drawX();
+    </script>
+
+    <script src="starPrinting.js"></script>
   </body>
 </html>
