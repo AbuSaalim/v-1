@@ -179,7 +179,7 @@ const prompt = require("prompt-sync")();
 //   console.log();
 // }
 
-// ///////    8. Number Increment Reverse Pyramid    ///////////////
+// ///////    9. Number Increment Reverse Pyramid    ///////////////
 // let n = Number(prompt("Enter A Number : "));
 // for (let i = 1; i <= n; i++) {
 //   for (let j = 1; j <= n -i; j++) {
@@ -188,7 +188,7 @@ const prompt = require("prompt-sync")();
 //   console.log();
 // }
 
-///////    9. Number changing Pyramid    ///////////////
+///////    10. Number changing Pyramid    ///////////////
 // let n = Number(prompt("Enter A Number : "));
 // let currenStatus = 1;
 // for (let i = 1; i <= n; i++) {
@@ -198,7 +198,7 @@ const prompt = require("prompt-sync")();
 //   console.log();
 // }
 
-///////    10. Zero One Triangle    ///////////////
+///////    11. Zero One Triangle    ///////////////
 
 let n = Number(prompt("Enter A Number : "));
 for (let i = 1; i <= n; i++) {
