@@ -189,11 +189,26 @@ const prompt = require("prompt-sync")();
 // }
 
 ///////    9. Number changing Pyramid    ///////////////
+// let n = Number(prompt("Enter A Number : "));
+// let currenStatus = 1;
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     process.stdout.write(`${currenStatus++} `);
+//   }
+//   console.log();
+// }
+
+///////    10. Zero One Triangle    ///////////////
+
 let n = Number(prompt("Enter A Number : "));
-let currenStatus = 1;
 for (let i = 1; i <= n; i++) {
   for (let j = 1; j <= i; j++) {
-    process.stdout.write(`${currenStatus++}`);
+    // process.stdout.write("* ");
+    if ((i + j) % 2 == 0) {
+      process.stdout.write(1 + " ");
+    } else {
+      process.stdout.write(0 + " ");
+    }
   }
   console.log();
 }
