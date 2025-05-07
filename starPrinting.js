@@ -144,14 +144,37 @@ const prompt = require("prompt-sync")();
 // }
 
 //////    7.  square hollow pattern       ///////
-let n = Number(prompt("Enter a Number : "));
+// let n = Number(prompt("Enter a Number : "));
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= n; j++) {
+//     if (i == 1 || i == n || j == 1 || j == n) {
+//       process.stdout.write("*");
+//     } else {
+//       process.stdout.write(" ");
+//     }
+//   }
+//   console.log();
+// }
+
+// //////    8.  Number Triangular       ///////
+// let n = Number(prompt("Enter a Number"));
+
+// for (let i = 1; i <= n; i++) {
+//   //   process.stdout.write(i + " ");
+//   for (let j = 1; j <= n; j++) {
+//     process.stdout.write(" ");
+//   }
+//   for (let k = 1; k <= n; k++) {
+//     process.stdout.write(i + "");
+//   }
+//   console.log();
+// }
+
+///////    8. Number Increment Pyramid    ///////////////
+let n = Number(prompt("Enter A Number : "));
 for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n; j++) {
-    if (i == 1 || i == n || j == 1 || j == n) {
-      process.stdout.write("*");
-    } else {
-      process.stdout.write(" ");
-    }
+  for (let j = 1; j <= i; j++) {
+    process.stdout.write(j + " ");
   }
   console.log();
 }
