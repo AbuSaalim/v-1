@@ -179,11 +179,21 @@ const prompt = require("prompt-sync")();
 //   console.log();
 // }
 
-///////    8. Number Increment Reverse Pyramid    ///////////////
+// ///////    8. Number Increment Reverse Pyramid    ///////////////
+// let n = Number(prompt("Enter A Number : "));
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= n -i; j++) {
+//     process.stdout.write(j + " ");
+//   }
+//   console.log();
+// }
+
+///////    9. Number changing Pyramid    ///////////////
 let n = Number(prompt("Enter A Number : "));
+let currenStatus = 1;
 for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n -i; j++) {
-    process.stdout.write(j + " ");
+  for (let j = 1; j <= i; j++) {
+    process.stdout.write(`${currenStatus++}`);
   }
   console.log();
 }
