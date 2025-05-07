@@ -130,11 +130,24 @@ const prompt = require("prompt-sync")();
 
 //////    6. Star Printing V      ///////
 
-let n = Number(prompt("Enter A Number : "));
+// let n = Number(prompt("Enter A Number : "));
 
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= 2 * n - 1; j++) {
+//     if (i === j || i + j == 2 * n) {
+//       process.stdout.write("*");
+//     } else {
+//       process.stdout.write(" ");
+//     }
+//   }
+//   console.log();
+// }
+
+//////    7.  square hollow pattern       ///////
+let n = Number(prompt("Enter a Number : "));
 for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= 2 * n - 1; j++) {
-    if (i === j || i + j == 2 * n) {
+  for (let j = 1; j <= n; j++) {
+    if (i == 1 || i == n || j == 1 || j == n) {
       process.stdout.write("*");
     } else {
       process.stdout.write(" ");
